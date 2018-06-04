@@ -1,3 +1,4 @@
+//Hoisting
 console.log('Helllllooooo Jerry');
 
 name = 'Peter';
@@ -23,3 +24,39 @@ function findAvg(a, b) {
 }
 
 //Jerry, Kramer/2, George would be the 'guess', but through hoisting. the function will be called after the first console log. Then the let avg(Kramer)
+
+
+let fruits = ['Apple', 'Banana', 'Durian'];
+let leastFav;
+
+
+//Scoping
+function printFruits() {
+    let favFruit = 'Peach';
+    let leastFav = (fruits[2])
+    console.log(fruits[0]);
+
+    function printFavFruit() {
+        console.log(favFruit)
+    }
+    printFavFruit();
+    
+}
+printFruits();
+
+console.log(leastFav)
+
+randoFunction();
+function randoFunction() { 
+    console.log('There is a snake in my boot!')
+}
+
+
+
+var someFunc = function(){
+    alert('YO');
+}
+
+someFunc();
+
+
